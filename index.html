@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learnify – Learn Any Programming Language</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <header>💡 Learnify – Learn Any Programming Language</header>
+
+  <div class="container">
+    <!-- 🔍 Search Bar -->
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input list="subjects" id="subjectInput" placeholder="Enter a language (e.g., Python, JavaScript, C++)">
+      <datalist id="subjects">
+        <option value="C">
+        <option value="C++">
+        <option value="C#">
+        <option value="Python">
+        <option value="Java">
+        <option value="JavaScript">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="PHP">
+        <option value="SQL">
+        <option value="React">
+        <option value="Node.js">
+        <option value="TypeScript">
+        <option value="Kotlin">
+        <option value="Scratch">
+        <option value="DBMS">
+        <option value="Go">
+        <option value="Ruby">
+        <option value="Swift">
+        <option value="Rust">
+      </datalist>
+      <button onclick="findResources()">Search</button>
+    </div>
+
+    <!-- 🎯 Search Results -->
+    <div class="resources" id="resources"></div>
+
+    <!-- ➕ Add Resource -->
+    <div class="add-resource">
+      <h4>Add Custom Resource:</h4>
+      <input type="text" id="customSubject" placeholder="Language name (e.g., Kotlin)">
+      <input type="text" id="customName" placeholder="Resource name (e.g., Kotlin Full Course)">
+      <input type="text" id="customLink" placeholder="Resource link (https://...)">
+      <button onclick="addResource()">Add Resource</button>
+    </div>
+
+    <!-- 🌐 Shared Resources Section -->
+    <div id="shared">
+      <h3>🌍 Shared Resources from Students:</h3>
+    </div>
+
+    <!-- 📚 Output Section -->
+    <div id="output"></div>
+  </div>
+
+  <footer>© 2025 Learnify | Empowering Learning through Technology 💻</footer>
+
+  <!-- ✅ Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+  <!-- ✅ Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
